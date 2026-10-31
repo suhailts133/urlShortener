@@ -5,8 +5,6 @@ export interface IApiResponse<T = null> {
   statuscode?: number;
 }
 
-
-
 export interface AuthResponseDTO {
   jwtToken: string;
   refreshToken: string;
@@ -22,4 +20,3 @@ export interface UserRepsonseDTO {
 export interface RefreshTokenDTO {
   newAccessToken: string;
 }
-

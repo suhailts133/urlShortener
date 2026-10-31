@@ -23,7 +23,7 @@ export class UrlService implements IUrlService {
     }
     return { message: URL_MESSAGES.URL.ALREADY_EXISTS, data: url.shortUrl };
   }
-  
+
   async redirectUrl(shortId: string): Promise<string> {
     const shortUrl = await this._urlRepo.findOne({ shortId });
     if (!shortUrl) {

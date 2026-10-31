@@ -16,7 +16,7 @@ const envSchema = z.object({
   JWT_ACCESS_EXPIRY: z.string().default("15m"),
   JWT_REFRESH_EXPIRY: z.string().default("7d"),
   // url
-  BASE:z.string().min(1, "BASE is required for url generation")
+  BASE: z.string().min(1, "BASE is required for url generation"),
 });
 
 export type EnvConfig = z.infer<typeof envSchema>;

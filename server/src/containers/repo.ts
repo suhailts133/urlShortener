@@ -4,4 +4,4 @@ import { UserRepo } from "../repo/user.repo";
 
 export const redisRepo = new RedisRepository();
 export const userRepo = new UserRepo();
-export const urlRepo = new UrlRepo()
+export const urlRepo = new UrlRepo();

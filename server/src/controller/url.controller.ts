@@ -18,7 +18,7 @@ export class UrlController {
   redirectUrl = asyncHandler(async (req: Request, res: Response) => {
     const shortId = req.params.shortId as string;
     if (!shortId) throw new AppError(URL_MESSAGES.URL.SHORT_ID_REQUIRED, RESPONSE_CODE.BAD_REQUEST);
-    const result = await this._urlService.redirectUrl(shortId)
-    res.redirect(result)
+    const result = await this._urlService.redirectUrl(shortId);
+    res.redirect(result);
   });
 }

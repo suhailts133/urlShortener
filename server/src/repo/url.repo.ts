@@ -9,6 +9,6 @@ export class UrlRepo extends BaseRepository<IUrl> implements IUrlRepo {
   }
 
   async findByurl(url: string): Promise<IUrl | null> {
-    return await this.findOne({ originalUrl:url });
+    return await this.findOne({ originalUrl: url });
   }
 }
